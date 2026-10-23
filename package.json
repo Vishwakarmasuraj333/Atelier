@@ -1,0 +1,45 @@
+{
+  "name": "atelier-ecommerce",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:push": "prisma db push",
+    "db:seed": "tsx prisma/seed.ts",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "bcryptjs": "^2.4.3",
+    "canvas-confetti": "^1.9.4",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.4.7",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.475.0",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwind-merge": "^3.0.1",
+    "three": "^0.174.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.174.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "prisma": "^6.4.1",
+    "tailwindcss": "^4",
+    "tsx": "^4.19.3",
+    "typescript": "^5"
+  }
+}

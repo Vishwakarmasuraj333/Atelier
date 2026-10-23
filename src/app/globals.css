@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --burgundy: #641C32;
+  --burgundy-dark: #441120;
+  --burgundy-light: #7E2540;
+  --rose: #B83B5E;
+  --rose-light: #F8E9EE;
+  --champagne: #E8CFA8;
+  --champagne-light: #F7EFE4;
+  --champagne-dark: #CBB085;
+  --ivory: #FFF9F3;
+  --charcoal: #17151A;
+  --charcoal-light: #2A2630;
+  --soft-gray: #F4F1EF;
+  --border-lux: rgba(232, 207, 168, 0.28);
+  
+  --background: #FFF9F3;
+  --foreground: #17151A;
+  --card: #FFFFFF;
+  --card-foreground: #17151A;
+  --primary: #641C32;
+  --primary-foreground: #FFF9F3;
+  --accent: #E8CFA8;
+  --muted: #8E889B;
+  --border: #E8E2DC;
+}
+
+.dark {
+  --background: #121015;
+  --foreground: #F8F5F1;
+  --card: #1B1720;
+  --card-foreground: #F8F5F1;
+  --primary: #8E2746;
+  --primary-foreground: #FFF9F3;
+  --accent: #E8CFA8;
+  --muted: #A39DAF;
+  --border: #2F2A38;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.font-serif {
+  font-family: var(--font-serif), 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+}
+
+.font-brand {
+  font-family: var(--font-cinzel), 'Cinzel', var(--font-serif), serif;
+  letter-spacing: 0.22em;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(23, 21, 26, 0.04);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 28, 50, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 28, 50, 0.65);
+}
+
+/* Luxury Card and Glass Utiltiies */
+.glass-lux {
+  background: rgba(255, 249, 243, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(232, 207, 168, 0.4);
+}
+
+.glass-dark {
+  background: rgba(23, 21, 26, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(232, 207, 168, 0.2);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F2DCB9 0%, #C8A26A 50%, #E8CFA8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.burgundy-gradient-text {
+  background: linear-gradient(135deg, #641C32 0%, #B83B5E 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shimmer-badge {
+  background: linear-gradient(90deg, rgba(232,207,168,0.15) 0%, rgba(232,207,168,0.4) 50%, rgba(232,207,168,0.15) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}

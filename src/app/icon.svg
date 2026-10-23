@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#F9E8CE" />
+      <stop offset="30%" stopColor="#E8CFA8" />
+      <stop offset="70%" stopColor="#CBB085" />
+      <stop offset="100%" stopColor="#8C6D3B" />
+    </linearGradient>
+    <linearGradient id="burgundyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#7E2540" />
+      <stop offset="50%" stopColor="#641C32" />
+      <stop offset="100%" stopColor="#3F0E1E" />
+    </linearGradient>
+  </defs>
+
+  {/* Background Hexagon / Diamond Crest */}
+  <rect width="100" height="100" rx="24" fill="#17151A" />
+  
+  {/* Outer Fine Diamond Facet Frame */}
+  <polygon
+    points="50,10 90,50 50,90 10,50"
+    stroke="url(#goldGradient)"
+    stroke-width="2"
+    fill="#24141E"
+  />
+
+  {/* Inner Concentric Diamond */}
+  <polygon
+    points="50,16 84,50 50,84 16,50"
+    stroke="url(#goldGradient)"
+    stroke-width="1"
+    stroke-dasharray="2 2"
+    fill="none"
+  />
+
+  {/* Maison Monogram A & É */}
+  <path
+    d="M34 68 L50 28 L52 28 L38 68 Z"
+    fill="url(#goldGradient)"
+  />
+  <path
+    d="M48 28 L64 68 L60 68 L46 28 Z"
+    fill="url(#goldGradient)"
+  />
+  <path
+    d="M38 52 L62 52 L62 54 L38 54 Z"
+    fill="url(#goldGradient)"
+  />
+
+  {/* Éclat Brilliance Star Accent */}
+  <g transform="translate(50, 48)">
+    <path
+      d="M0,-7 Q0,-1 6,0 Q0,1 0,7 Q0,1 -6,0 Q0,-1 0,-7 Z"
+      fill="#FFFFFF"
+    />
+  </g>
+</svg>
